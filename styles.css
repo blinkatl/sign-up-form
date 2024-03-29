@@ -15,10 +15,7 @@ body {
     display: flex;
 }
 
-.main {
-    background: #282b30;
-    width: 70%;
-}
+/*left side*/
 
 .splash {
     background-image: url('files/splash.avif');
@@ -44,4 +41,29 @@ body {
     font-family: 'Norse Bold', sans-serif;
     font-size: 100px;
     color: white;
+}
+
+/*right side*/
+
+.main {
+    background: #282b30;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.top, .middle, .bottom {
+    height: calc(100% / 3);
+}
+
+.middle {
+    background: #36393e;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
